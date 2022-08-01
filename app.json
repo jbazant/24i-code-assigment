@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "24i-code-assigment",
+    "name": "24i code-assigment",
     "slug": "24i-code-assigment",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -9,14 +9,12 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#fb0046"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
