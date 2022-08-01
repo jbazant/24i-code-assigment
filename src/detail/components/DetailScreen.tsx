@@ -1,4 +1,4 @@
-import { Box, Center, Text } from 'native-base'
+import { Box, Center, Text } from 'native-base';
 
 export function DetailScreen() {
   return (
@@ -7,5 +7,5 @@ export function DetailScreen() {
         <Text>Detail screen</Text>
       </Center>
     </Box>
-  )
+  );
 }
