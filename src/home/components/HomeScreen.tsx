@@ -1,11 +1,13 @@
-import { Box, Center, Text } from 'native-base'
+import { Center, Spinner, Text } from 'native-base';
+import { Card } from '../../common/components/Card';
 
 export function HomeScreen() {
   return (
-    <Box safeArea>
-      <Center>
-        <Text>Home screen</Text>
-      </Center>
-    </Box>
-  )
+    <Center safeArea flex={1} bgColor="primary">
+      <Card>
+        <Spinner size="lg" />
+        <Text>Loading...</Text>
+      </Card>
+    </Center>
+  );
 }
