@@ -1,11 +1,12 @@
 import { useQuery } from '@tanstack/react-query';
-import { Box, Center, ScrollView, Text } from 'native-base';
+import { Center } from 'native-base';
 import { getHomeData } from '../../models/queries';
 import { DataErrorInfo } from '../common/DataErrorInfo';
 import { LoadingIndicator } from '../common/LoadingIndicator';
+import { HomeCarousels } from './HomeCarousels';
 
 export function HomeScreen() {
-  const { isLoading, refetch, isError } = useQuery(['home'], getHomeData);
+  const { isLoading, refetch, isError, data } = useQuery(['home'], getHomeData);
 
   if (isLoading) {
     return (
@@ -23,11 +24,5 @@ export function HomeScreen() {
     );
   }
 
-  return (
-    <Box safeArea flex={1} bgColor="primary">
-      <ScrollView>
-        <Text>Data loaded</Text>
-      </ScrollView>
-    </Box>
-  );
+  return <HomeCarousels carousels={data.carousels} />;
 }

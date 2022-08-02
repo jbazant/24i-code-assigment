@@ -1,0 +1,11 @@
+{
+  "id": 1,
+  "title": "Beetlejuice",
+  "year": "1988",
+  "duration": "92",
+  "genres": ["Comedy", "Fantasy"],
+  "director": "Tim Burton",
+  "actors": "Alec Baldwin, Geena Davis, Annie McEnroe, Maurice Page",
+  "plot": "A couple of recently deceased ghosts contract the services of a \"bio-exorcist\" in order to remove the obnoxious new owners of their house.",
+  "posterUrl": "https://cdn.shopify.com/s/files/item_slug.jpg"
+}
