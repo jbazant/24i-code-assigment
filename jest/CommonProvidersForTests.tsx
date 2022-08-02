@@ -1,3 +1,4 @@
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { NativeBaseProvider } from 'native-base';
 import React from 'react';
 
@@ -6,6 +7,25 @@ const inset = {
   insets: { top: 0, left: 0, right: 0, bottom: 0 },
 };
 
+export const testingQueryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      retry: false,
+      cacheTime: Infinity,
+    },
+  },
+  logger: {
+    log: console.log,
+    warn: console.warn,
+    error:
+      process.env.NODE_ENV === 'test'
+        ? () => {
+            // do not log
+          }
+        : console.error,
+  },
+});
+
 export function CommonProvidersForTests({
   children,
 }: {
@@ -13,7 +33,9 @@ export function CommonProvidersForTests({
 }) {
   return (
     <NativeBaseProvider initialWindowMetrics={inset}>
-      {children}
+      <QueryClientProvider client={testingQueryClient}>
+        {children}
+      </QueryClientProvider>
     </NativeBaseProvider>
   );
 }

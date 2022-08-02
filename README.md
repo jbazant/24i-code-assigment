@@ -18,3 +18,4 @@ Application is written to run on iOS, Android and web.
 - Use [Detox](https://github.com/wix/detox) for E2E testing.
 - Improve caching policy e.g. by observing when application is brought to foreground. 
 - Improve data validation with e.g. [Zod](https://github.com/colinhacks/zod).
+- Lazy loading of images.
