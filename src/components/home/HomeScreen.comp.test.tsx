@@ -28,8 +28,9 @@ describe('DetailScreen component', () => {
       wrapper: CommonProvidersForTests,
     });
 
-    await waitFor(() => getByText('Data loaded'));
-    expect(getByText('Data loaded')).toBeTruthy();
+    await waitFor(() => getByText('Pick of the month'));
+    expect(getByText('Recommended')).toBeTruthy();
+    expect(getByText('Recently watched')).toBeTruthy();
 
     scope.done();
   });
@@ -63,9 +64,7 @@ describe('DetailScreen component', () => {
 
       await waitFor(() => getByText('Error loading data'));
       fireEvent.press(getByText('Try again'));
-      await waitFor(() => getByText('Data loaded'));
-
-      expect(await getByText('Data loaded')).toBeTruthy();
+      await waitFor(() => getByText('Pick of the month'));
     });
   });
 });
