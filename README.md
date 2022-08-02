@@ -19,3 +19,10 @@ Application is written to run on iOS, Android and web.
 - Improve caching policy e.g. by observing when application is brought to foreground. 
 - Improve data validation with e.g. [Zod](https://github.com/colinhacks/zod).
 - Lazy loading of images.
+- Localization of texts.
+
+## Author
+Jiří Bažant - [bazant.dev](https://bazant.dev)
+
+## Licence
+MIT
