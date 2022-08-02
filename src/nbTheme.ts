@@ -5,6 +5,16 @@ export const nbTheme = extendTheme({
     primary: '#fb0046',
   },
   components: {
+    Button: {
+      defaultProps: {
+        variant: 'outline',
+        my: 2,
+        borderRadius: 20,
+        _text: {
+          fontWeight: 600,
+        },
+      },
+    },
     Spinner: {
       defaultProps: {
         color: 'black',

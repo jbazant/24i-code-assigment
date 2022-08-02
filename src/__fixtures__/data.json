@@ -1,0 +1,63 @@
+{
+  "carousels": [
+    {
+      "title": "Pick of the month",
+      "items": [
+        {
+          "id": 1,
+          "title": "Beetlejuice",
+          "year": "1988",
+          "duration": "92",
+          "genres": [
+            "Comedy",
+            "Fantasy"
+          ],
+          "director": "Tim Burton",
+          "actors": "Alec Baldwin, Geena Davis, Annie McEnroe, Maurice Page",
+          "plot": "A couple of recently deceased ghosts contract the services of a \"bio-exorcist\" in order to remove the obnoxious new owners of their house.",
+          "posterUrl": "https://cdn.shopify.com/s/files/1/0057/3728/3618/products/3be93e116eea0c595d82c0e80ea234f4_815eafd7-1092-4408-a278-b3497af72254_480x.progressive.jpg?v=1573652484"
+        },
+        {
+          "id": 2,
+          "title": "The Cotton Club",
+          "year": "1984",
+          "duration": "127",
+          "genres": [
+            "Crime",
+            "Drama",
+            "Music"
+          ],
+          "director": "Francis Ford Coppola",
+          "actors": "Richard Gere, Gregory Hines, Diane Lane, Lonette McKee",
+          "plot": "The Cotton Club was a famous night club in Harlem. The story follows the people that visited the club, those that ran it, and is peppered with the Jazz music that made it so famous.",
+          "posterUrl": "https://cdn.shopify.com/s/files/1/0057/3728/3618/products/lf_1dd60351-903e-4e42-8908-d12c7ede1ec3_480x.progressive.jpg?v=1626206006"
+        }
+      ]
+    },
+    {
+      "title": "Recommended",
+      "items": [
+        {
+          "id": 134,
+          "title": "Ex Machina",
+          "year": "2015",
+          "duration": "108",
+          "genres": [
+            "Drama",
+            "Mystery",
+            "Sci-Fi"
+          ],
+          "director": "Alex Garland",
+          "actors": "Domhnall Gleeson, Corey Johnson, Oscar Isaac, Alicia Vikander",
+          "plot": "A young programmer is selected to participate in a ground-breaking experiment in synthetic intelligence by evaluating the human qualities of a breath-taking humanoid A.I.",
+          "posterUrl": "https://cdn.shopify.com/s/files/1/0057/3728/3618/products/2cf4a90563a8842f5174580ca8800ad6_058eda06-9e7a-433b-8e84-b29aaaaf10b9_480x.progressive.jpg?v=1573618718"
+        }
+      ]
+    },
+    {
+      "title": "Recently watched",
+      "items": [
+      ]
+    }
+  ]
+}
