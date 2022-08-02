@@ -10,6 +10,9 @@ export const nbTheme = extendTheme({
         variant: 'outline',
         my: 2,
         borderRadius: 20,
+        _text: {
+          fontWeight: 600,
+        },
       },
     },
     Spinner: {
