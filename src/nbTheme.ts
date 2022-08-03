@@ -5,6 +5,13 @@ export const nbTheme = extendTheme({
     primary: '#fb0046',
   },
   components: {
+    Badge: {
+      defaultProps: {
+        borderRadius: 10,
+        m: 1,
+        bgColor: 'fuchsia.200',
+      },
+    },
     Button: {
       defaultProps: {
         variant: 'outline',

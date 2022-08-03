@@ -1,3 +1,4 @@
+import { NavigationContainer } from '@react-navigation/native';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { NativeBaseProvider } from 'native-base';
 import React from 'react';
@@ -34,7 +35,7 @@ export function CommonProvidersForTests({
   return (
     <NativeBaseProvider initialWindowMetrics={inset}>
       <QueryClientProvider client={testingQueryClient}>
-        {children}
+        <NavigationContainer>{children}</NavigationContainer>
       </QueryClientProvider>
     </NativeBaseProvider>
   );
