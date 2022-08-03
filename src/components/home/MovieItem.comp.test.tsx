@@ -4,13 +4,14 @@ import { CommonProvidersForTests } from '../../../jest/CommonProvidersForTests';
 import { MovieItem } from './MovieItem';
 import testItem from '../../__fixtures__/singleItem.json';
 
-const navigate = jest.fn();
+const mockNavigate = jest.fn();
 
 jest.mock('@react-navigation/native', () => {
   const actualNav = jest.requireActual('@react-navigation/native');
+
   return {
     ...actualNav,
-    useNavigation: () => ({ navigate }),
+    useNavigation: () => ({ navigate: mockNavigate }),
   };
 });
 
@@ -34,6 +35,6 @@ describe('MovieItem', () => {
 
     fireEvent.press(getByLabelText('Asset title'));
 
-    expect(navigate).toHaveBeenCalledWith('Detail', testItem);
+    expect(mockNavigate).toHaveBeenCalledWith('Detail', testItem);
   });
 });
