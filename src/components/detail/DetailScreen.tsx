@@ -1,20 +1,12 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import {
-  Box,
-  Center,
-  Heading,
-  Image,
-  ScrollView,
-  Text,
-  VStack,
-} from 'native-base';
+import { Box, Image, VStack } from 'native-base';
 import { RootStackParamList } from '../../types/RootStack';
-import { Card } from '../common/Card';
+import { DescriptionBlock } from './DescriptionBlock';
 
 export function DetailScreen({
   route,
 }: NativeStackScreenProps<RootStackParamList, 'Detail'>) {
-  const { title, plot, posterUrl } = route.params;
+  const { title, posterUrl } = route.params;
   return (
     <VStack flex={1} bgColor="primary">
       <Box flex={1}>
@@ -25,16 +17,7 @@ export function DetailScreen({
           alt={'Poster for: ' + title}
         />
       </Box>
-      <ScrollView flex={1} m={3}>
-        <Center>
-          <Heading color="white" mb={3} accessibilityLabel="Asset title">
-            {title}
-          </Heading>
-        </Center>
-        <Card>
-          <Text accessibilityLabel="Asset plot">{plot}</Text>
-        </Card>
-      </ScrollView>
+      <DescriptionBlock asset={route.params} />
     </VStack>
   );
 }
