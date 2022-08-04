@@ -1,23 +1,19 @@
-import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { Box, Image, VStack } from 'native-base';
+import { StackScreenProps } from '@react-navigation/stack';
+import { Box, VStack } from 'native-base';
 import { RootStackParamList } from '../../types/RootStack';
+import { MoviePoster } from '../common/MoviePoster';
 import { DescriptionBlock } from './DescriptionBlock';
 
 export function DetailScreen({
   route,
-}: NativeStackScreenProps<RootStackParamList, 'Detail'>) {
-  const { title, posterUrl } = route.params;
+}: StackScreenProps<RootStackParamList, 'Detail'>) {
+  const item = route.params;
   return (
     <VStack flex={1} bgColor="primary">
       <Box flex={1}>
-        <Image
-          w="100%"
-          h="100%"
-          source={{ uri: posterUrl }}
-          alt={'Poster for: ' + title}
-        />
+        <MoviePoster item={item} w={'100%'} h={'100%'} />
       </Box>
-      <DescriptionBlock asset={route.params} />
+      <DescriptionBlock asset={item} />
     </VStack>
   );
 }

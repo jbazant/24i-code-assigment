@@ -22,6 +22,13 @@ export const nbTheme = extendTheme({
         },
       },
     },
+    Pressable: {
+      defaultProps: {
+        _pressed: {
+          opacity: 0.8,
+        },
+      },
+    },
     Spinner: {
       defaultProps: {
         color: 'black',
