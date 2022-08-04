@@ -7,7 +7,7 @@ import { RootStackParamList } from '../../types/RootStack';
 const Stack = createSharedElementStackNavigator<RootStackParamList>();
 
 export function RootStack() {
-  const backIconColor = useToken('colors', 'primary');
+  const backIconColor = useToken('colors', 'fuchsia.200');
 
   return (
     <Stack.Navigator

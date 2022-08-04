@@ -13,12 +13,14 @@ export function MovieItem({ item }: MovieItemProps) {
   const { title } = item;
   const navigation = useNavigation<NavigationProp<RootStackParamList>>();
 
+  const width = { base: '128px', md: '190px', lg: '256px' };
+  const height = { base: '190px', md: '282px', lg: '380px' };
   return (
     <Pressable m={3} onPress={() => navigation.navigate('Detail', item)}>
-      <Box w="128px" bgColor="white">
-        <MoviePoster item={item} w="128px" h="190px" />
+      <Box w={width} bgColor="white">
+        <MoviePoster item={item} w={width} h={height} />
         <Heading
-          fontSize="sm"
+          fontSize={{ base: 'sm', md: 'md', lg: 'lg' }}
           accessibilityLabel="Asset title"
           textAlign="center"
           my={3}

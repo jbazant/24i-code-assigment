@@ -19,12 +19,18 @@ export const DescriptionBlock = ({ asset }: DescriptionBlockProps) => {
           my={3}
           accessibilityLabel="Asset title"
           textAlign="center"
+          fontSize={{ base: 'xl', md: '2xl' }}
         >
           {title}
         </Heading>
       </Center>
       <Card>
-        <Text accessibilityLabel="Asset plot">{plot}</Text>
+        <Text
+          fontSize={{ base: 'md', md: 'lg' }}
+          accessibilityLabel="Asset plot"
+        >
+          {plot}
+        </Text>
       </Card>
     </ScrollView>
   );

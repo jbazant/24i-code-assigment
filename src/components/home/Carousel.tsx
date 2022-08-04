@@ -13,6 +13,7 @@ export function Carousel({ title, items }: MovieCarouselShape) {
         pt={5}
         pb={2}
         px={3}
+        fontSize={{ base: 'xl', md: '2xl' }}
       >
         {title}
       </Heading>
